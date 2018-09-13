@@ -4,7 +4,7 @@ Created on Tue Sep 11 16:46:14 2018
 
 @author: Mariana Abrantes
 """
-cardapio = {'chocolate': 3.50, 'jujuba': 2.00, 'sorvete': 3.50}
+cardapio = {'chocolate': 3, 'jujuba': 2, 'sorvete': 3}
 a = True
 while a:
     print('0 - sair')
@@ -46,6 +46,12 @@ while a:
                 del cardapio[del_prod]
         else:
             print('Produto não encontrado.')
+    elif escolha == 4:
+        for i in cardapio:
+            print('{0}: {1}'.format(i, cardapio[i]))
+        
+    else:
+        print('Opção inváda.')
             
             
             
