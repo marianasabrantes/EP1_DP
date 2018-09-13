@@ -22,12 +22,19 @@ while a:
         print('O cardápio possui os seguintes itens: {0}'.format(cardapio))
     elif escolha == 2:
         novo_item = str(input('Nome do produto: '))
+        quantidade_produto = int(input('Quantidade inicial: '))
         if novo_item not in cardapio:
             condicao = True
-            cardapio[novo_item] = 0
+            cardapio[novo_item] = quantidade_produto
             while condicao:
-                quantidade_produto = int(input('Quantidade inicial: '))
-                if quantidade_produto > 0:
+                if quantidade_produto >= 0:
                     cardapio[novo_item] = quantidade_produto
                     condicao = False
-                    
+                else:
+                    print('Não é possível adicionar quantidade negativa.')
+                    condicao = False
+        else:
+            if quantidade_produto < 0:
+                print('Não é possível adicionar quantidade negativa.')
+            else:
+                cardapio[novo_item] += quantidade_produto
