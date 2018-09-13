@@ -4,7 +4,6 @@ Created on Tue Sep 11 16:46:14 2018
 
 @author: Mariana Abrantes
 """
-
 cardapio = {'chocolate': 3.50, 'jujuba': 2.00, 'sorvete': 3.50}
 a = True
 while a:
@@ -38,3 +37,153 @@ while a:
                 print('Não é possível adicionar quantidade negativa.')
             else:
                 cardapio[novo_item] += quantidade_produto
+    elif escolha == 3:
+        del_prod = input('Digite o nome do produto a ser removido: ')
+        if del_prod in cardapio:
+            quant = int(input('Digite a quantidade a ser removida: '))
+            cardapio[del_prod] -= quant
+            if cardapio[del_prod] == 0:
+                del cardapio[del_prod]
+        else:
+            print('Produto não encontrado.')
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
