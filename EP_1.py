@@ -5,9 +5,9 @@ Created on Tue Sep 11 16:46:14 2018
 @author: Mariana Abrantes
 """
 
+cardapio = {'chocolate': 3.50, 'jujuba': 2.00, 'sorvete': 3.50}
 a = True
 while a:
-    cardapio = ['banana']
     print('0 - sair')
     print('1 - imprimir cardápio')
     print('2 - adicionar item')
@@ -21,9 +21,13 @@ while a:
     elif escolha == 1:
         print('O cardápio possui os seguintes itens: {0}'.format(cardapio))
     elif escolha == 2:
-        nome = input('Digite o nome do produto: ')
-        quant = int(input('Digite a quantidade do produto: '))
-        if nome in cardapio:
-            
-        else:
-            print('Produto não disponivel')
+        novo_item = str(input('Nome do produto: '))
+        if novo_item not in cardapio:
+            condicao = True
+            cardapio[novo_item] = 0
+            while condicao:
+                quantidade_produto = int(input('Quantidade inicial: '))
+                if quantidade_produto > 0:
+                    cardapio[novo_item] = quantidade_produto
+                    condicao = False
+                    
