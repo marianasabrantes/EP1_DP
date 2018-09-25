@@ -11,7 +11,6 @@ import json
 with open ("EP_1.json", 'r' ) as documento:
     cardapio = json.load(documento)
 
-cardapio = {'chocolate': 3, 'jujuba': 2, 'sorvete': 3}
 a = True
 while a:
     print('0 - sair')
